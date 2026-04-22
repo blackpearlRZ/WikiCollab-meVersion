@@ -33,40 +33,71 @@ collabore en temps réel
 
 ## Besoins fonctionnels
 🔐 Authentification
-inscription
-connexion sécurisée
+
+* inscription
+* connexion sécurisée
+
 🏢 Gestion des espaces
-créer un espace
-consulter les espaces
-définir type : public / privé
+
+* créer un espace
+
+* consulter les espaces
+
+* définir type : public / privé
+
 📄 Gestion des pages
-créer page
-modifier contenu
-supprimer page
-hiérarchie (pages enfants)
+
+* créer page
+
+* modifier contenu
+
+* supprimer page
+
+* hiérarchie (pages enfants)
+
 ✍️ Édition collaborative
-édition Markdown
-prévisualisation
-édition multi-utilisateurs
-synchronisation temps réel
+
+* édition Markdown
+ 
+* prévisualisation
+
+* édition multi-utilisateurs
+
+* synchronisation temps réel
+
 💬 Commentaires
-commentaire sur une partie du texte
-affichage des commentaires
+
+* commentaire sur une partie du texte
+
+* affichage des commentaires
+
 🕓 Historique
-sauvegarde des versions
-consultation des anciennes versions
-comparaison simple
+
+* sauvegarde des versions
+
+* consultation des anciennes versions
+
+* comparaison simple
 
 ## Besoins non fonctionnels
+
 ⚡ Performance
-temps réel fluide (WebSocket)
+
+* temps réel fluide (WebSocket)
+
 🔒 Sécurité
-authentification JWT
-mots de passe hashés
+
+* authentification JWT
+
+* mots de passe hashés
+
 📱 UX/UI
-interface simple et responsive
+
+* interface simple et responsive
+
 🔄 Scalabilité
-architecture modulaire
+
+* architecture modulaire
 
 # ARCHITECTURE DU SYSTÈME
 
@@ -83,18 +114,33 @@ Database (MongoDB)
 WebSocket (Socket.IO)
 
 ## Stack technique
+
 **Frontend**
+
 React.js
+
 CSS / Tailwind
+
 Axios
+
 React Router
+
 **Backend**
+
 Node.js
+
 Express.js
+
 Temps réel
+
 Socket.IO
+
 **Base de données**
+
 MongoDB
+
 **Sécurité**
+
 JWT
+
 bcrypt
