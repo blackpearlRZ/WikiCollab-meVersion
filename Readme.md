@@ -40,43 +40,32 @@ collabore en temps réel
 🏢 Gestion des espaces
 
 * créer un espace
-
 * consulter les espaces
-
 * définir type : public / privé
 
 📄 Gestion des pages
 
 * créer page
-
 * modifier contenu
-
 * supprimer page
-
 * hiérarchie (pages enfants)
 
 ✍️ Édition collaborative
 
 * édition Markdown
- 
 * prévisualisation
-
 * édition multi-utilisateurs
-
 * synchronisation temps réel
 
 💬 Commentaires
 
 * commentaire sur une partie du texte
-
 * affichage des commentaires
 
 🕓 Historique
 
 * sauvegarde des versions
-
 * consultation des anciennes versions
-
 * comparaison simple
 
 ## Besoins non fonctionnels
@@ -88,7 +77,6 @@ collabore en temps réel
 🔒 Sécurité
 
 * authentification JWT
-
 * mots de passe hashés
 
 📱 UX/UI
@@ -115,32 +103,25 @@ WebSocket (Socket.IO)
 
 ## Stack technique
 
-**Frontend**
+*Frontend*
 
 React.js
-
 CSS / Tailwind
-
 Axios
-
 React Router
 
-**Backend**
+*Backend*
 
 Node.js
-
 Express.js
-
 Temps réel
-
 Socket.IO
 
-**Base de données**
+*Base de données*
 
 MongoDB
 
-**Sécurité**
+*Sécurité*
 
 JWT
-
 bcrypt
