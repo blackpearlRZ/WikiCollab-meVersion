@@ -1,0 +1,114 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* WikiCollab Design System
+   Primary #0F2854 · Secondary #1C4D8D · Accent #4988C4 · Light #BDE8F5
+   All colors must be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;           /* white */
+    --surface: 195 60% 97%;            /* very light blue tint */
+    --foreground: 215 60% 19%;         /* #0F2854 */
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 60% 19%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 60% 19%;
+
+    --primary: 215 70% 19%;            /* #0F2854 */
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 209 58% 53%;       /* #4988C4 */
+
+    --secondary: 211 66% 33%;          /* #1C4D8D */
+    --secondary-foreground: 0 0% 100%;
+
+    --accent: 205 45% 53%;             /* #4988C4 */
+    --accent-foreground: 215 60% 19%;
+
+    --muted: 195 50% 95%;
+    --muted-foreground: 211 30% 45%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 195 40% 90%;
+    --input: 195 40% 90%;
+    --ring: 215 70% 19%;
+
+    --radius: 0.875rem;
+
+    --gradient-primary: linear-gradient(135deg, hsl(215 70% 19%), hsl(211 66% 33%) 60%, hsl(205 45% 53%));
+    --gradient-soft: linear-gradient(135deg, hsl(195 60% 97%), hsl(190 65% 92%));
+    --shadow-soft: 0 1px 2px hsl(215 50% 10% / 0.06), 0 8px 24px -12px hsl(215 70% 19% / 0.12);
+    --shadow-elevated: 0 10px 40px -10px hsl(215 70% 19% / 0.22);
+
+    --sidebar-background: 195 60% 97%;
+    --sidebar-foreground: 215 60% 19%;
+    --sidebar-primary: 215 70% 19%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 195 50% 92%;
+    --sidebar-accent-foreground: 215 60% 19%;
+    --sidebar-border: 195 40% 88%;
+    --sidebar-ring: 215 70% 19%;
+  }
+
+  .dark {
+    --background: 215 60% 10%;
+    --surface: 215 60% 15%;
+    --foreground: 0 0% 96%;
+    --card: 215 60% 15%;
+    --card-foreground: 0 0% 96%;
+    --popover: 215 60% 15%;
+    --popover-foreground: 0 0% 96%;
+    --primary: 205 45% 53%;
+    --primary-foreground: 215 60% 10%;
+    --secondary: 211 66% 33%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 205 45% 53%;
+    --accent-foreground: 215 60% 10%;
+    --muted: 215 30% 22%;
+    --muted-foreground: 211 30% 65%;
+    --border: 215 30% 25%;
+    --input: 215 30% 28%;
+    --ring: 205 45% 53%;
+    --sidebar-background: 215 60% 14%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 205 45% 53%;
+    --sidebar-primary-foreground: 215 60% 10%;
+    --sidebar-accent: 215 30% 20%;
+    --sidebar-accent-foreground: 0 0% 96%;
+    --sidebar-border: 215 30% 22%;
+    --sidebar-ring: 205 45% 53%;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Manrope', system-ui, sans-serif;
+    font-feature-settings: "ss01", "cv11";
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: 'Sora', system-ui, sans-serif;
+    letter-spacing: -0.01em;
+  }
+}
+
+@layer utilities {
+  .bg-gradient-primary { background-image: var(--gradient-primary); }
+  .bg-gradient-soft { background-image: var(--gradient-soft); }
+  .shadow-soft { box-shadow: var(--shadow-soft); }
+  .shadow-elevated { box-shadow: var(--shadow-elevated); }
+  .glass {
+    background: hsl(0 0% 100% / 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+}
