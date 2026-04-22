@@ -104,7 +104,6 @@ WebSocket (Socket.IO)
 ## Stack technique
 
 *Frontend*
------------
 
 React.js
 CSS / Tailwind
