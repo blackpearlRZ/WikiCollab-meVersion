@@ -1,0 +1,14 @@
+{
+  "name": "fullstack-app",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:frontend-ts\" \"npm run dev:backend\"",
+    "dev:frontend-ts": "cd frontend-ts && npm run dev",
+    "dev:backend": "cd backend && npm run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "dependencies": {
+    "jwt-decode": "^4.0.0"
+  }
+}
