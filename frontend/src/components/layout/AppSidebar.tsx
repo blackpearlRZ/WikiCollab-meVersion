@@ -30,7 +30,8 @@ const items = [
 export function AppSidebar() {
   const { state } = useSidebar();
   const collapsed = state === "collapsed";
-  const  { user } = useAuth();
+  const  { user , loading} = useAuth();
+  console.log('user from auth context:', user);
   console.log(localStorage.getItem("token"));
   console.log("Current user in sidebar:", user);
 
@@ -109,23 +110,25 @@ export function AppSidebar() {
       </SidebarContent>
 
       <SidebarFooter className="border-t p-3">
-        <div className="flex items-center gap-3 rounded-lg p-2">
-          <Avatar className="h-8 w-8">
-            <AvatarFallback className="bg-primary text-primary-foreground text-xs font-semibold">
-              {user?.name?.[0]?.toUpperCase() || "U"}
-            </AvatarFallback>
-          </Avatar>
+  {loading ? (
+    <div className="text-sm text-muted-foreground">Loading...</div>
+  ) : user ? (
+    <div className="flex items-center gap-3 rounded-lg p-2">
+      <Avatar className="h-8 w-8">
+        <AvatarFallback className="bg-primary text-primary-foreground text-xs font-semibold">
+          {user.name?.[0]?.toUpperCase()}
+        </AvatarFallback>
+      </Avatar>
 
-          <div className="min-w-0">
-            <div className="truncate text-sm font-medium">
-              {user?.name || "Loading..."}
-            </div>
-            <div className="truncate text-xs text-muted-foreground">
-              {user?.email || ""}
-            </div>
-          </div>
-        </div>
-      </SidebarFooter>
+      <div className="min-w-0">
+        <div className="truncate text-sm font-medium">{user.name}</div>
+        <div className="truncate text-xs text-muted-foreground">{user.email}</div>
+      </div>
+    </div>
+  ) : (
+    <div className="text-sm text-red-500">Not authenticated</div>
+  )}
+</SidebarFooter>
     </Sidebar>
   );
 }

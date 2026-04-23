@@ -60,7 +60,7 @@ export const spaces: Space[] = [
     visibility: "private",
     members: [users[0], users[1], users[2], users[5]],
     pageCount: 24,
-    emoji: "🚀",
+    emoji: "",
   },
   {
     id: "s-2",
@@ -69,7 +69,7 @@ export const spaces: Space[] = [
     visibility: "private",
     members: [users[0], users[2], users[4]],
     pageCount: 41,
-    emoji: "⚙️",
+    emoji: "",
   },
   {
     id: "s-3",
@@ -78,7 +78,7 @@ export const spaces: Space[] = [
     visibility: "public",
     members: [users[0], users[1], users[3], users[5]],
     pageCount: 18,
-    emoji: "🎨",
+    emoji: "",
   },
   {
     id: "s-4",
@@ -87,7 +87,7 @@ export const spaces: Space[] = [
     visibility: "public",
     members: users,
     pageCount: 12,
-    emoji: "📘",
+    emoji: "",
   },
   {
     id: "s-5",
@@ -96,7 +96,7 @@ export const spaces: Space[] = [
     visibility: "private",
     members: [users[0], users[3], users[5]],
     pageCount: 9,
-    emoji: "📣",
+    emoji: "",
   },
 ];
 
@@ -105,7 +105,7 @@ export const pages: Page[] = [
     id: "p-1",
     spaceId: "s-1",
     title: "Q2 Product Roadmap",
-    emoji: "🗺️",
+    emoji: "",
     updatedAt: "2h ago",
     blocks: [
       { id: "b1", type: "h1", text: "Q2 Product Roadmap" },
@@ -118,12 +118,12 @@ export const pages: Page[] = [
       { id: "b8", type: "p", text: "We aim to ship the first iteration of real-time presence in week 4, followed by inline comments in week 7." },
     ],
   },
-  { id: "p-2", spaceId: "s-1", title: "Launch checklist", emoji: "✅", updatedAt: "Yesterday", blocks: [] },
-  { id: "p-3", spaceId: "s-1", title: "Customer interviews", emoji: "🎙️", updatedAt: "3d ago", blocks: [] },
-  { id: "p-4", spaceId: "s-2", title: "API architecture", emoji: "🧱", updatedAt: "5h ago", blocks: [] },
-  { id: "p-5", spaceId: "s-2", title: "Onboarding for new engineers", emoji: "👋", updatedAt: "1w ago", blocks: [] },
-  { id: "p-6", spaceId: "s-3", title: "Color tokens", emoji: "🎨", updatedAt: "Today", blocks: [] },
-  { id: "p-7", spaceId: "s-4", title: "Time off policy", emoji: "🌴", updatedAt: "2w ago", blocks: [] },
+  { id: "p-2", spaceId: "s-1", title: "Launch checklist", emoji: "", updatedAt: "Yesterday", blocks: [] },
+  { id: "p-3", spaceId: "s-1", title: "Customer interviews", emoji: "", updatedAt: "3d ago", blocks: [] },
+  { id: "p-4", spaceId: "s-2", title: "API architecture", emoji: "", updatedAt: "5h ago", blocks: [] },
+  { id: "p-5", spaceId: "s-2", title: "Onboarding for new engineers", emoji: "", updatedAt: "1w ago", blocks: [] },
+  { id: "p-6", spaceId: "s-3", title: "Color tokens", emoji: "", updatedAt: "Today", blocks: [] },
+  { id: "p-7", spaceId: "s-4", title: "Time off policy", emoji: "", updatedAt: "2w ago", blocks: [] },
 ];
 
 export const activity: Activity[] = [

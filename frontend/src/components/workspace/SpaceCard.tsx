@@ -8,7 +8,7 @@ import type { Space } from "../../lib/mock-data";
 export function SpaceCard({ space }: { space: Space }) {
   return (
     <NavLink to={`/app/spaces/${space.id}`} className="group block">
-      <Card className="h-full rounded-2xl border-border/70 p-5 shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:border-primary/30 hover:shadow-elevated">
+      <Card className="h-full rounded-2xl border-border/70 p-3 shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:border-primary/30 hover:shadow-elevated">
         <div className="flex items-start justify-between">
           <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-soft text-2xl">
             {space.emoji}

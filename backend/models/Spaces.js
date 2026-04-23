@@ -6,18 +6,19 @@ const spaceSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-
+    description: {
+      type: String,
+      default: "",
+    },
     visibility: {
       type: String,
       enum: ["public", "private"],
       default: "public",
     },
-
     owner: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
     },
-
     members: [
       {
         type: mongoose.Schema.Types.ObjectId,
